@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 Route::resources([
-    'projects' => 'ProjectController' 
+    'project' => 'ProjectController',
+    'feature' => 'FeatureController'
 ]);
 Auth::routes();
 

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Project;
+use App\Feature;
 
-class ProjectController extends Controller
+class FeatureController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('project.index')->with([
-            'projects' => Project::all()
-        ]);
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('project.create');
+        //
     }
 
     /**
@@ -37,7 +35,8 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        Project::create($request->all());
+        Feature::create($request->all());
+        return redirect()->back();
     }
 
     /**
@@ -48,13 +47,7 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return view('project.show')->with([
-            'project' => Project::with([
-                'features' => function($query){
-                    $query->orderBy('status_id', 'ASC');
-                }
-            ])->find($id)
-        ]);
+        //
     }
 
     /**

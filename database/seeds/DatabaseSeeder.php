@@ -20,13 +20,16 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('123456')
         ]);
         Status::create([
-            'status' => 'En Espera'
+            'status' => 'En Espera',
+            'color' => '#d9534f'
         ]);
         Status::create([
-            'status' => 'Trabajando'
+            'status' => 'Trabajando',
+            'color' => '#5cb85c'
         ]);
         Status::create([
-            'status' => 'Finalizado'
+            'status' => 'Finalizado',
+            'color' => '#ccc'
         ]);
     }
 }

@@ -5,10 +5,11 @@
     <h1 class="title">Nuevo Proyecto</h1>
 </div>
 <div class="col-sm-6">
-    <form action="" method="post">
+    <form action="{{route('project.store')}}" method="post">
+        {{csrf_field()}}
         <div class="form-group">
-            <label for="">Nombre</label>
-            <input type="text" name="name" class="form-control">
+            <label for="">Proyecto</label>
+            <input type="text" name="project" class="form-control">
         </div>
         <div class="form-group">
             <label for="">Descripción</label>
