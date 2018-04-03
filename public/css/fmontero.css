@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext');
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #414C59;
+}
+header{
+    padding: 20px 0px;
+    background: #008fe2; /* Old browsers */
+    background: -moz-linear-gradient(left, #fe7e00 2%, #ff0066 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fe7e00 2%,#ff0066 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fe7e00 2%,#ff0066 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7e00', endColorstr='#ff0066',GradientType=1 ); /* IE6-9 */
+}
+a:hover, a:focus{
+    text-decoration: unset;
+}
+.navbar{
+    margin-bottom: unset;
+    background: unset;
+    border: unset;
+    box-shadow: unset;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand, .navbar-default .navbar-text{
+    color: #fff;
+}
+.navbar-toggle{
+    float: left;
+    margin-left: 15px;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    font-weight: 700;
+    background: unset;
+    color: #fff;
+}
+@media(max-width:767px){
+
+}
+.btn-right{
+    float: right;
+}
+.btn-left{
+    float: left;
+}
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    color: #fff;
+    background: unset;
+    border: unset;
+}
+.sidebar{
+    padding: 0px;
+}
+.list-group-item{
+    border: unset;
+}
+.list-group-item.item::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-weight: 900;
+    position: absolute;
+    right: 5px;
+}
+.title{
+    text-transform: uppercase;
+}
