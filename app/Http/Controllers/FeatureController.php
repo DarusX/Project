@@ -47,7 +47,9 @@ class FeatureController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('feature.show')->with([
+            'feature' => Feature::find($id)
+        ]);
     }
 
     /**
