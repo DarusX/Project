@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use Session;
 
 class ProjectController extends Controller
 {
@@ -38,6 +39,8 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         Project::create($request->all());
+        Session::flash('msg', 'Guardado correctamente');
+        return redirect()->back();
     }
 
     /**

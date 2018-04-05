@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Status;
 
 class CreateStatusesTable extends Migration
 {
@@ -19,6 +20,19 @@ class CreateStatusesTable extends Migration
             $table->string('color');
             $table->timestamps();
         });
+
+        Status::create([
+            'status' => 'En Espera',
+            'color' => '#d9534f'
+        ]);
+        Status::create([
+            'status' => 'Trabajando',
+            'color' => '#5cb85c'
+        ]);
+        Status::create([
+            'status' => 'Finalizado',
+            'color' => '#ccc'
+        ]);
     }
 
     /**
